@@ -1,0 +1,13 @@
+{
+  "name": "angular-example",
+  "homepage": "https://github.com/millteacher/angular-example",
+  "authors": [
+    "mill1983 <mill1983@126.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}

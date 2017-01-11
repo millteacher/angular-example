@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="js/shoppingCarCtrl.js"></script>
+</head>
+<body ng-controller='CarCtrl'>
+	<h1>我的购物车</h1>
+	<div ng-repeat="item in items">
+		<span>{{item.title}}</span>
+		<input type="text" ng-model="item.quantity">
+		<span>{{item.price|currency:'¥'}}</span>
+		<span>{{item.price * item.quantity | currency:'¥'}}</span>
+		<button ng-click="remove($index)">删除</button>
+	</div> 
+</body>
+</html>
